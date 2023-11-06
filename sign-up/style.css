@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "poppins", sans-serif;
+}
+#section1 {
+  background: url(./img/Backdrop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  /* flex-direction: column; */
+  max-width: 100rem;
+  justify-content: space-between;
+  border-radius: 2rem;
+}
+
+.login-dets {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40rem;
+  background-color: #fff;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.pics {
+  max-width: 50rem;
+}
+
+.pics img {
+  height: 90vh;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.login-dets h3 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.login-dets p {
+  font-size: 1.4rem;
+}
+
+.main-icon {
+  margin-top: 2.4rem;
+}
+
+.icons {
+  border: 0.1rem solid #000;
+  padding: 1rem 2rem;
+  margin-bottom: 1.4rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ion-icon {
+  margin-right: 1rem;
+}
+
+.ic1 {
+  color: rgb(56, 28, 215);
+}
+
+.ic4 {
+  color: #1da1f2;
+}
+
+.spang .ic2 {
+  background: conic-gradient(
+    from 0deg,
+    #4285f4 90deg,
+    #0f9d58 180deg,
+    #f4b400 270deg,
+    #db4437 360deg
+  );
+  color: rgba(253, 253, 253, 0.99);
+}
+
+/*  MEDIA QUERY */
+
+@media (max-width: 64em) {
+  .login-dets {
+    max-width: 40rem;
+  }
+
+  .pics {
+    max-width: 40rem;
+  }
+
+  .pics img {
+    width: 100%;
+    height: vh;
+  }
+}
+
+@media (max-width: 52em) {
+  /* #section1 {
+    padding: 2rem;
+  } */
+  .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pics {
+    display: none;
+  }
+  .login-dets {
+    border-radius: 2rem;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .login-dets p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 23.1em) {
+  .login-dets {
+    padding: 1rem;
+  }
+  .login-dets p {
+    font-size: 1.2rem;
+  }
+  .span {
+    font-size: 1.2rem;
+  }
+}
